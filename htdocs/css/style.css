@@ -1,0 +1,115 @@
+a {
+  text-decoration: none; }
+
+select {
+  outline: none; }
+
+body {
+  background-color: #fcf9ea; }
+
+#header {
+  width: 100%;
+  height: 64px;
+  background-color: #c5f0a4;
+  margin-bottom: 24px; }
+
+.header-container {
+  width: 980px;
+  height: 100%;
+  margin: auto;
+  overflow: hidden; }
+  @media screen and (max-width: 980px) {
+    .header-container {
+      width: 100%; } }
+  .header-container__name {
+    height: 100%;
+    float: left;
+    display: flex;
+    align-items: center;
+    font-weight: bold; }
+  .header-container__name a {
+    padding: 20px 20px; }
+  .header-container__name a:hover {
+    border-radius: 5px;
+    background-color: #35b0ab; }
+  .header-container__name a:visited {
+    color: black; }
+  .header-container__navigation {
+    width: 240px;
+    height: 100%;
+    list-style: none;
+    float: right;
+    display: flex;
+    justify-content: space-between;
+    align-items: center; }
+    @media screen and (max-width: 980px) {
+      .header-container__navigation {
+        width: 60%; } }
+  .header-container__navigation-item {
+    height: 100%;
+    width: 50%;
+    display: flex;
+    align-items: center;
+    font-weight: bold; }
+  .header-container__navigation-item a {
+    padding: 20px 20px; }
+  .header-container__navigation-item a:hover {
+    border-radius: 5px;
+    background-color: #35b0ab; }
+  .header-container__navigation-item a:visited {
+    color: black; }
+
+#main {
+  width: 980px;
+  margin: auto; }
+  @media screen and (max-width: 980px) {
+    #main {
+      width: 100%; } }
+
+.title {
+  width: 100%;
+  font-size: 200%;
+  text-align: center;
+  margin-bottom: 24px; }
+
+.selector {
+  width: 30%;
+  margin-bottom: 24px;
+  margin: auto; }
+  .selector__label {
+    width: 80px;
+    text-align: right; }
+  .selector__group {
+    display: flex;
+    align-items: baseline;
+    margin-bottom: 24px;
+    width: 100%; }
+  .selector__list {
+    width: 50%;
+    padding: 8px 38px 8px 8px;
+    border-radius: 50px;
+    background-color: white; }
+
+.product-list {
+  width: 100%;
+  height: 500px;
+  display: flex;
+  flex-direction: column; }
+  .product-list__container {
+    display: flex;
+    justify-content: space-between;
+    margin-bottom: 10px; }
+    @media screen and (max-width: 980px) {
+      .product-list__container {
+        display: block; } }
+  .product-list__product {
+    width: 320px;
+    height: 400px;
+    box-shadow: 10px 10px 15px -10px;
+    border-radius: 50px;
+    background-color: white; }
+    @media screen and (max-width: 980px) {
+      .product-list__product {
+        margin: auto;
+        margin-bottom: 24px; } }
+

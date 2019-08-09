@@ -1,0 +1,5 @@
+=========== Example ===========
+GET  : []
+POST : {"0":"Apple","1":"Banana","love":"Orange"}
+=========== Request ===========
+0=Apple&1=Banana&love=Orange

@@ -1,0 +1,76 @@
+<!doctype html>
+<html>
+
+<head>
+    <meta name="viewport" content="width=device-width,initial-scale=1.0">
+    <link rel="stylesheet" href="./css/reset.css">
+    <link rel="stylesheet" href="./css/style.css">
+</head>
+
+<body>
+    <header id="header">
+        <div class="header-container">
+            <ul class="header-container__navigation">
+                <li class="header-container__navigation-item"><a href="">ログイン</a></li>
+                <li class="header-container__navigation-item"><a href="">新規登録</a></li>
+            </ul>
+            <div class="header-container__name">
+                <p><a href="">myEC</a></p>
+            </div>
+        </div>
+    </header>
+    <main id="main">
+
+        <div class="title">
+            <h1>ようこそ!</h1>
+        </div>
+
+        <section class="selector">
+            <div class="selector__group">
+                <label class="selector__label" for="name">並べ替え：</label>
+                <select class="selector__list" name="product-name" id="name">
+                    <option value="asc">昇順</option>
+                    <option value="desc">降順</option>
+                </select>
+            </div>
+
+            <div class="selector__group">
+               <label class="selector__label" for="category">選択：</label>
+                <select class="selector__list" name="product-category" id="category">
+                    <option value="1">カテゴリ1</option>
+                    <option value="2">カテゴリ2</option>
+                </select>
+            </div>
+
+            <div class="selector__group">
+               <label class="selector__label" for="sort">ソート：</label>
+                <select class="selector__list" name="product-sort" id="sort">
+                    <option value="high">高い順</option>
+                    <option value="low">安い順</option>
+                </select>
+            </div>
+
+        </section>
+
+        <section class="product-list">
+            <div class="product-list__container">
+                <div class="product-list__product"></div>
+                <div class="product-list__product"></div>
+                <div class="product-list__product"></div>
+            </div>
+            <div class="product-list__container">
+                <div class="product-list__product"></div>
+                <div class="product-list__product"></div>
+                <div class="product-list__product"></div>
+            </div>
+            <div class="product-list__container">
+                <div class="product-list__product"></div>
+                <div class="product-list__product"></div>
+                <div class="product-list__product"></div>
+            </div>
+        </section>
+
+    </main>
+</body>
+
+</html>

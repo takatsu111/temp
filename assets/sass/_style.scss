@@ -1,0 +1,164 @@
+$main-width:980px;
+$mb-middle:24px;
+
+a {
+    text-decoration: none;
+}
+
+select{
+    outline: none;
+}
+
+body {
+    background-color: #fcf9ea;
+}
+
+#header {
+    width: 100%;
+    height: 64px;
+    background-color: #c5f0a4;
+    margin-bottom: $mb-middle;
+}
+
+.header-container {
+
+    width: $main-width;
+    height: 100%;
+    margin: auto;
+    overflow: hidden;
+
+    @media screen and (max-width:$main-width) {
+        width: 100%;
+    }
+
+    &__name {
+        height: 100%;
+        float: left;
+        display: flex;
+        align-items: center;
+        font-weight: bold;
+    }
+
+    &__name a {
+        padding: 20px 20px;
+    }
+
+    &__name a:hover {
+        border-radius: 5px;
+        background-color: #35b0ab;
+    }
+
+    &__name a:visited {
+        color: black;
+    }
+
+    &__navigation {
+        width: 240px;
+        height: 100%;
+        list-style: none;
+        float: right;
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        
+        @media screen and (max-width:$main-width) {
+        width: 60%;
+    }
+    }
+
+    &__navigation-item {
+        height: 100%;
+        width: 50%;
+        display: flex;
+        align-items: center;
+        font-weight: bold;
+    }
+
+    &__navigation-item a {
+        padding: 20px 20px;
+    }
+
+    &__navigation-item a:hover {
+        border-radius: 5px;
+        background-color: #35b0ab;
+    }
+
+    &__navigation-item a:visited {
+        color: black;
+    }
+}
+
+#main {
+    width: $main-width;
+    margin: auto;
+
+    @media screen and (max-width:$main-width) {
+        width: 100%;
+    }
+
+}
+
+.title {
+    width: 100%;
+    font-size: 200%;
+    text-align: center;
+    margin-bottom: $mb-middle;
+}
+
+.selector {
+    width: 30%;
+    margin-bottom: $mb-middle;
+    margin: auto;
+
+    &__label {
+        width: 80px;
+        text-align: right;
+    }
+
+    &__group {
+        display: flex;
+        align-items: baseline;
+        margin-bottom: $mb-middle;
+        width:100%;
+
+    }
+
+    &__list {
+        width: 50%;
+        padding: 8px 38px 8px 8px;
+        border-radius: 50px;
+        background-color: white;
+    }
+
+}
+
+.product-list {
+    width: 100%;
+    height: 500px;
+    display: flex;
+    flex-direction: column;
+
+    &__container {
+        display: flex;
+        justify-content: space-between;
+        margin-bottom: 10px;
+
+        @media screen and (max-width:$main-width) {
+            display:block;
+        }
+
+    }
+
+    &__product {
+        width: 320px;
+        height: 400px;
+        box-shadow: 10px 10px 15px -10px;
+        border-radius: 50px;
+        background-color: white;
+        @media screen and (max-width:$main-width) {
+            margin:auto;
+            margin-bottom:$mb-middle;
+        }
+        
+    }
+}
